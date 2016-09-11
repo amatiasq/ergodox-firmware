@@ -164,3 +164,28 @@ void kbfun_mediakey_press_release(void) {
 /* ----------------------------------------------------------------------------
  * ------------------------------------------------------------------------- */
 
+/*
+ * [name]
+ *   ALT + press|release
+ *
+ * [description]
+ *   Generate a 'ALT' press or release before the normal keypress or
+ *   keyrelease
+ */
+void kbfun_alt_press_release(void) {
+	_kbfun_press_release(IS_PRESSED, KEY_LeftAlt);
+	kbfun_press_release();
+}
+
+/*
+ * [name]
+ *   GUI + press|release
+ *
+ * [description]
+ *   Generate a 'GUI' press or release before the normal keypress or
+ *   keyrelease
+ */
+void kbfun_gui_press_release(void) {
+	_kbfun_press_release(IS_PRESSED, KEY_LeftGUI);
+	kbfun_press_release();
+}
