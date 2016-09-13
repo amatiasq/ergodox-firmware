@@ -64,13 +64,13 @@ void kbfun_layer_pop_all(void) {
     const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
 
       // LAYER $index
-      KB_MATRIX_LAYER(0, 41, 30, 31, 32, 33, 34, , 43, 20, 26, 8, 21, 23, , 0, 4, 22, 7, 9, 10, 225, 29, 27, 6, 25, 5, , 224, 226, 0, 0, , 0, 0, 0, 0, 0, 42, 227, 41, , 35, 36, 37, 38, 39, 102, , 28, 24, 12, 18, 19, 0, 11, 13, 14, 15, 51, 40, , 17, 16, 54, 55, 56, 225, 81, 82, 80, 79, 226, 0, 0, 0, 0, 0, 43, 40, 44),
+      KB_MATRIX_LAYER(0, 41, 30, 31, 32, 33, 34, 2, 43, 20, 26, 8, 21, 23, 1, 0, 4, 22, 7, 9, 10, 225, 29, 27, 6, 25, 5, 0, 224, 226, 0, 0, 1, 0, 0, 0, 0, 0, 42, 227, 41, 2, 35, 36, 37, 38, 39, 102, 1, 28, 24, 12, 18, 19, 0, 11, 13, 14, 15, 51, 40, 0, 17, 16, 54, 55, 56, 225, 81, 82, 80, 79, 226, 0, 0, 0, 0, 0, 43, 40, 44),
 
       // LAYER $index
-      KB_MATRIX_LAYER(0, 0, 58, 59, 60, 61, 62, 63, 43, 30, 31, 37, 38, 32, , 0, 47, 45, 52, 49, 48, 225, 100, 100, 47, 48, 49, , 224, 226, 53, 53, 0, 0, 0, 0, 0, 0, 42, 227, 41, 64, 65, 66, 67, 68, 69, 0, , 74, 75, 82, 78, 0, 0, 80, 80, 81, 79, 79, 40, , 0, 80, 77, 79, 0, 225, 128, 129, 127, 0, 226, 0, 0, 0, 0, 0, 43, 40, 44),
+      KB_MATRIX_LAYER(0, 0, 58, 59, 60, 61, 62, 63, 43, 30, 31, 37, 38, 32, 1, 0, 47, 45, 52, 0, 48, 225, 100, 100, 47, 48, 0, 0, 224, 226, 53, 53, 0, 0, 0, 0, 0, 0, 42, 227, 41, 64, 65, 66, 67, 68, 69, 102, 1, 74, 75, 82, 78, 0, 0, 80, 80, 81, 79, 79, 40, 0, 0, 80, 77, 79, 0, 225, 128, 129, 127, 0, 226, 0, 0, 0, 0, 0, 43, 40, 44),
 
       // LAYER $index
-      KB_MATRIX_LAYER(0, 0, 0, 0, 0, 0, 0, 0, 43, 0, 0, 0, 0, 0, , 0, 0, 0, 0, 0, 0, 225, 0, 0, 0, 0, 0, , 224, 226, 0, 0, 0, 0, 0, 0, 0, 0, 42, 227, 41, 0, 0, 83, 84, 85, 86, 0, , 0, 95, 96, 97, 87, 0, 0, 92, 93, 94, 87, 40, , 0, 89, 90, 91, 88, 225, 98, 98, 99, 88, 226, 0, 0, 0, 0, 0, 43, 40, 44),
+      KB_MATRIX_LAYER(0, 0, 0, 0, 0, 0, 0, 0, 43, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 225, 0, 0, 0, 0, 0, 0, 224, 226, 0, 0, 1, 0, 0, 0, 0, 0, 42, 227, 41, 0, 0, 83, 84, 85, 86, 102, 1, 0, 95, 96, 97, 87, 0, 0, 92, 93, 94, 87, 40, 0, 0, 89, 90, 91, 88, 225, 98, 98, 99, 88, 226, 0, 0, 0, 0, 0, 43, 40, 44),
 
     };
     // ----------------------------------------------------------------------------
@@ -79,13 +79,13 @@ void kbfun_layer_pop_all(void) {
     const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
 
       // LAYER $index
-      KB_MATRIX_LAYER(NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, NULL, kprrel, NULL, NULL, NULL, NULL, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, NULL, NULL, NULL, NULL, kprrel, kprrel, kprrel),
+      KB_MATRIX_LAYER(NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, lpush2, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, lpush1, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, lpush0, kprrel, kprrel, NULL, NULL, lpush1, NULL, NULL, NULL, NULL, NULL, kprrel, kprrel, kprrel, lpush2, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, lpush1, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, lpush0, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, NULL, NULL, NULL, NULL, kprrel, kprrel, kprrel),
 
       // LAYER $index
-      KB_MATRIX_LAYER(NULL, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, altprre, altprre, sshprre, sshprre, altprre, kprrel, NULL, kprrel, kprrel, altprre, altprre, kprrel, kprrel, kprrel, sshprre, altprre, altprre, kprrel, kprrel, kprrel, kprrel, kprrel, altprre, NULL, NULL, NULL, NULL, NULL, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, NULL, guiprre, kprrel, kprrel, kprrel, guiprre, kprrel, kprrel, NULL, altprre, kprrel, altprre, NULL, kprrel, kprrel, kprrel, kprrel, NULL, kprrel, NULL, NULL, NULL, NULL, NULL, kprrel, kprrel, kprrel),
+      KB_MATRIX_LAYER(NULL, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, altprre, altprre, sshprre, sshprre, altprre, lpush1, NULL, kprrel, kprrel, altprre, NULL, kprrel, kprrel, kprrel, sshprre, altprre, altprre, NULL, lpush0, kprrel, kprrel, kprrel, altprre, NULL, NULL, NULL, NULL, NULL, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, lpush1, kprrel, kprrel, kprrel, kprrel, NULL, NULL, guiprre, kprrel, kprrel, kprrel, guiprre, kprrel, lpush0, NULL, altprre, kprrel, altprre, NULL, kprrel, kprrel, kprrel, kprrel, NULL, kprrel, NULL, NULL, NULL, NULL, NULL, kprrel, kprrel, kprrel),
 
       // LAYER $index
-      KB_MATRIX_LAYER(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, kprrel, NULL, NULL, NULL, NULL, NULL, kprrel, NULL, NULL, NULL, NULL, NULL, NULL, kprrel, NULL, NULL, NULL, NULL, NULL, kprrel, kprrel, kprrel, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, kprrel, kprrel, kprrel, NULL, NULL, kprrel, kprrel, kprrel, kprrel, NULL, kprrel, NULL, kprrel, kprrel, kprrel, kprrel, NULL, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, NULL, NULL, NULL, NULL, kprrel, kprrel, kprrel),
+      KB_MATRIX_LAYER(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, kprrel, NULL, NULL, NULL, NULL, NULL, lpush1, NULL, NULL, NULL, NULL, NULL, NULL, kprrel, NULL, NULL, NULL, NULL, NULL, lpush0, kprrel, kprrel, NULL, NULL, lpush1, NULL, NULL, NULL, NULL, NULL, kprrel, kprrel, kprrel, NULL, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, lpush1, NULL, kprrel, kprrel, kprrel, kprrel, NULL, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, lpush0, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, NULL, NULL, NULL, NULL, kprrel, kprrel, kprrel),
 
     };
     // ----------------------------------------------------------------------------
@@ -94,14 +94,13 @@ void kbfun_layer_pop_all(void) {
     const void_funptr_t PROGMEM _kb_layout_release[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
 
       // LAYER $index
-      KB_MATRIX_LAYER(NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, NULL, kprrel, NULL, NULL, NULL, NULL, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, NULL, NULL, NULL, NULL, kprrel, kprrel, kprrel),
+      KB_MATRIX_LAYER(NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, kprrel, kprrel, NULL, NULL, lpop1, NULL, NULL, NULL, NULL, NULL, kprrel, kprrel, kprrel, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, NULL, NULL, NULL, NULL, kprrel, kprrel, kprrel),
 
       // LAYER $index
-      KB_MATRIX_LAYER(NULL, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, altprre, altprre, sshprre, sshprre, altprre, kprrel, NULL, kprrel, kprrel, altprre, altprre, kprrel, kprrel, kprrel, sshprre, altprre, altprre, kprrel, kprrel, kprrel, kprrel, kprrel, altprre, NULL, NULL, NULL, NULL, NULL, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, NULL, guiprre, kprrel, kprrel, kprrel, guiprre, kprrel, kprrel, NULL, altprre, kprrel, altprre, NULL, kprrel, kprrel, kprrel, kprrel, NULL, kprrel, NULL, NULL, NULL, NULL, NULL, kprrel, kprrel, kprrel),
+      KB_MATRIX_LAYER(NULL, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, altprre, altprre, sshprre, sshprre, altprre, NULL, NULL, kprrel, kprrel, altprre, NULL, kprrel, kprrel, kprrel, sshprre, altprre, altprre, NULL, NULL, kprrel, kprrel, kprrel, altprre, NULL, NULL, NULL, NULL, NULL, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, kprrel, kprrel, kprrel, kprrel, NULL, NULL, guiprre, kprrel, kprrel, kprrel, guiprre, kprrel, NULL, NULL, altprre, kprrel, altprre, NULL, kprrel, kprrel, kprrel, kprrel, NULL, kprrel, NULL, NULL, NULL, NULL, NULL, kprrel, kprrel, kprrel),
 
       // LAYER $index
-      KB_MATRIX_LAYER(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, kprrel, NULL, NULL, NULL, NULL, NULL, kprrel, NULL, NULL, NULL, NULL, NULL, NULL, kprrel, NULL, NULL, NULL, NULL, NULL, kprrel, kprrel, kprrel, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, kprrel, kprrel, kprrel, NULL, NULL, kprrel, kprrel, kprrel, kprrel, NULL, kprrel, NULL, kprrel, kprrel, kprrel, kprrel, NULL, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, NULL, NULL, NULL, NULL, kprrel, kprrel, kprrel),
+      KB_MATRIX_LAYER(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, kprrel, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, kprrel, NULL, NULL, NULL, NULL, NULL, NULL, kprrel, kprrel, NULL, NULL, lpop1, NULL, NULL, NULL, NULL, NULL, kprrel, kprrel, kprrel, NULL, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, NULL, kprrel, kprrel, kprrel, kprrel, NULL, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL, NULL, NULL, NULL, NULL, kprrel, kprrel, kprrel),
 
     };
     // ----------------------------------------------------------------------------
-
